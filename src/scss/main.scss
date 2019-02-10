@@ -1,0 +1,83 @@
+html {
+    font-size: 12px;
+    @media (min-width: 800px) {
+        font-size: 14px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    padding: 0 8%;
+    box-sizing: border-box;
+    background: transparent;
+
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    padding: 0 8%;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+
+    li {
+        margin: 0 10px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 0.9rem;
+    }
+} 
+
+.section-1 {
+    height: 100vh;
+    position: relative;
+    padding-top: 100px;
+    background-image: url("../img/svg/section1_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .hero {
+        color: #fff;
+        margin-top: 50px;
+
+        h1 {
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            font-size: 4rem;
+        }
+    };
+    .phone {
+        position: absolute;
+        max-width: 40%;
+        right: 8%;
+        top: 0;
+    }
+}
