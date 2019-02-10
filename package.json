@@ -1,0 +1,7 @@
+{
+  "name": "levelapp",
+  "version": "1.0.0",
+  "description": "LevelApp landing",
+  "main": "index.js",
+  "license": "MIT"
+}
