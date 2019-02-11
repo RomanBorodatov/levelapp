@@ -15,6 +15,8 @@ body {
     overflow-x: hidden;
     position: relative;
 
+    background: #f5f7fa;
+
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -55,6 +57,15 @@ section {
     }
 } 
 
+.section-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+
+    color: #4B5E6E;
+}
+
 .section-1 {
     height: 100vh;
     position: relative;
@@ -73,11 +84,119 @@ section {
             line-height: normal;
             font-size: 4rem;
         }
+
+        .button {
+            width: 250px;
+            padding: 20px 0px 20px 0px;
+            background: linear-gradient(222.82deg, #FD7800 2.99%, #FFB400 100%);
+            box-shadow: 0px 25px 35px rgba(248, 129, 136, 0.25);
+            border-radius: 100px;
+            border: none;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                width: 100%;
+                font-style: normal;
+                font-weight: bold;
+                line-height: normal;
+                font-size: 0.9rem;
+            }
+        }
     };
     .phone {
         position: absolute;
         max-width: 40%;
         right: 8%;
         top: 0;
+    }
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .iframe-container{
+        position: relative;
+        width: 60%;
+        padding-bottom: 33.75%; 
+        height: 0; 
+        
+        iframe {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.section-3 {
+    .partners {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 100px 0;
+
+        .partner-card {
+            background: #FFFFFF;
+            box-shadow: 0px 25px 35px rgba(0, 163, 255, 0.05);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+            margin-bottom: 30px; 
+            padding: 10px 10px;
+            flex-grow: 1;
+            max-width: 175px;
+
+            img {
+                max-width: 155px;
+            }
+        }
+    }
+}
+
+.section-4 {
+    min-height: 100vh;
+    background-image: url("../img/svg/section4_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-6 {
+    min-height: 100vh;
+    background-image:
+    url("../img/svg/top.svg"),
+    url("../img/svg/bottom.svg"),
+    linear-gradient(65.81deg, rgba(0, 163, 255, 0.85) 0%, rgba(68, 219, 195, 0.85) 100%),
+    url("../img/andre-francois-mckenzie-557624-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, 100%, cover, cover;
+    background-position: top,
+    bottom,
+    center,
+    center;
+    background-color: #E5E5E5;
+}
+
+.section-8 {
+    min-height: 100vh;
+    background-image: url("../img/svg/section4_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 60%;
     }
 }
